@@ -1,0 +1,32 @@
+// My student ID is 10986196
+// Program to find average of even numbe
+// till a given even number say 10000.
+#include <stream>
+  
+int averageEven(int n)
+{
+    if (n % 2 != 0) {
+        printf("Invalid Input");
+        return -1;
+    }
+  
+    int sum = 0, count = 0;
+    while (n >= 2) {
+  
+        count++;
+  
+   
+        sum += n;
+  
+        n = n - 2;
+    }
+    return sum / count;
+}
+  
+
+int main()
+{
+    int n = 16;
+    printf("%d", averageEven(n));
+    return 0;
+}
